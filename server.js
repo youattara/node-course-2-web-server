@@ -17,12 +17,14 @@ hbs.registerHelper('getCurrentYear', () => {
 //set view engine
 app.set('view engine', 'hbs');
 
-//static dirname
-app.use(express.static(__dirname + '/public'));
-
+//app use
 app.use((req, res, next) => {
   res.render('maintenance.hbs');
 })
+
+//static dirname
+app.use(express.static(__dirname + '/public'));
+
 
 //root
 var homePageData = {
