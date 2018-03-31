@@ -22,7 +22,8 @@ app.set('view engine', 'hbs');
 
 //app use
 app.use((req, res, next) => {
-  res.render('maintenance.hbs');
+  //res.render('maintenance.hbs');
+  next();
 })
 
 //static dirname
@@ -45,6 +46,15 @@ var aboutPageData = {
 }
 app.get('/about', (req, res) => {
   res.render('about.hbs', aboutPageData)
+});
+
+//projects
+var projectsPageData = {
+  pageTitle: 'Projects Page',
+  welcomeMsg: 'Welcome to my about page'
+}
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', projectsPageData)
 });
 
 //bad
