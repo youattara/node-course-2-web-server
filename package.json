@@ -1,0 +1,17 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "my first web-server",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.0",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Yacouba Ouattara",
+  "license": "ISC"
+}
